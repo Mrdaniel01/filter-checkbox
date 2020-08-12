@@ -20,14 +20,14 @@
   align-items: center;
   justify-content: space-between;
   font-size: 18px;
-  color: var(--main-clear);
   background-color: #0a002f;
+  color: var(--main-clear);
 }
 
 .filter--title {
   width: 300px;
-  justify-self: left;
   margin: 0 0 0 60px;
+  justify-self: left;
   color: var(--main-clear);
 }
 
@@ -37,14 +37,14 @@
   height: 70px;
   align-items: stretch;
   justify-content: space-evenly;
-  font-size: 18px;
-  color: var(--main-clear);
+  font-size: 18px; /*Pendiente:  definir tamaño en rems*/
   background-color: #0a002f;
+  color: var(--main-clear);
 }
 
 .dfilter--level {
-  text-align: center;
   margin: 0 10px;
+  text-align: center;
 }
 
 .dfilter--level__label {
@@ -53,9 +53,9 @@
 
 .dfilter--level .dfilter--level__item {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 0 15px;
+  align-items: center;
+  flex-direction: column;
 }
 
 .dfilter--level__input-fake {
@@ -63,10 +63,12 @@
   position: relative;
   width: 30px;
   height: 30px;
+  outline: none;
   cursor: pointer;
   background-color: transparent;
-  outline: none;
 }
+
+/* Botones sin seleccionar*/
 
 .easy {
   border: 3px solid  #17B978;
@@ -82,6 +84,8 @@
   border: 3px solid  #B80D57;
   border-radius: 50%;
 }
+
+/*Botones seleccionados: Cambio del relleno*/
 
 .easy .dfilter--level__input:checked ~ .dfilter--level__input-fake {
   display: block;
@@ -111,6 +115,8 @@
   z-index: 10;
   cursor: pointer;
 }
+
+/*Pediente: Tabindex NO funciona en los filtros*/
 
 .dfilter--level__input-fake:focus {
   outline: 3px solid rgb(255, 255, 255);
