@@ -63,9 +63,11 @@
   position: relative;
   width: 30px;
   height: 30px;
-  outline: none;
   cursor: pointer;
+  border-radius: 50%;
   background-color: transparent;
+  transition: .8s;
+  outline: #0a002f;
 }
 
 /* Botones sin seleccionar*/
